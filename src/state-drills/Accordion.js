@@ -2,51 +2,48 @@ import React from 'react';
 
 class Accordion extends React.Component {
     static defaultProps = {
-       
+        sections: [] 
       }
    
     state = {
       currentSection: null,
     }
 
-      handleTriggerClick = () => {
-        this.setState({
-            spinningTheChamber: true
-          })
-        let timeout = setTimeout(function(){
-            this.setState({
-            spinningTheChamber: false,
-            chamber:Math.ceil(Math.random() * 8)
-              })
-            
-        }.bind(this), 2000);
-      }
-
-      componentWillUnmount() {
-        clearInterval(this.timeout)
-      }
-
       renderButtons () {
-         return (
-          this.props.sections.map((section, index) => (
-          <li><button key={index}>
-            {section.name}
+         return this.props.sections.map((section, index) => (
+          <li><button key={index} onClick={() => this.handleButtonClick(index)}>
+            {section.title}
           </button>
+          <p>{this.renderContent(index)}</p>
           </li>
-        )) 
+        ))
+      }
+
+      handleButtonClick(index) {
+          console.log("here");
+        this.setState({ currentSection: index })
+      }
+
+      renderContent(index) {
+       if(index === this.state.currentSection){
+        const currentTab = this.props.sections[this.state.currentSection]
+        return (
+          <p className = "content">
+            {currentTab.content}
+          </p>
+        )
+       }
+       else{
+           return
+       }
       }
 
     render() {
-
-
             return (
                <ul>
-                 {buttons}
+                 {!!this.props.sections.length && this.renderButtons()}
                </ul>
-               
-
             )
-        
   }
 }
 

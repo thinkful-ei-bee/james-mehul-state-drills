@@ -1,0 +1,189 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tabs Component closes the first tab and opens any clicked tab 1`] = `
+<ul>
+  <li>
+    <button
+      key="0"
+      onClick={[Function]}
+    >
+      Section 1
+    </button>
+    <p>
+      <p
+        className="content"
+      >
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+    </p>
+  </li>
+  <li>
+    <button
+      key="1"
+      onClick={[Function]}
+    >
+      Section 2
+    </button>
+    <p />
+  </li>
+  <li>
+    <button
+      key="2"
+      onClick={[Function]}
+    >
+      Section 3
+    </button>
+    <p />
+  </li>
+</ul>
+`;
+
+exports[`Tabs Component opens 1st  tab and closes any other tab 1`] = `
+<ul>
+  <li>
+    <button
+      key="0"
+      onClick={[Function]}
+    >
+      Section 1
+    </button>
+    <p>
+      <p
+        className="content"
+      >
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+    </p>
+  </li>
+  <li>
+    <button
+      key="1"
+      onClick={[Function]}
+    >
+      Section 2
+    </button>
+    <p />
+  </li>
+  <li>
+    <button
+      key="2"
+      onClick={[Function]}
+    >
+      Section 3
+    </button>
+    <p />
+  </li>
+</ul>
+`;
+
+exports[`Tabs Component opens 2nd  tab and closes any other tab 1`] = `
+<ul>
+  <li>
+    <button
+      key="0"
+      onClick={[Function]}
+    >
+      Section 1
+    </button>
+    <p />
+  </li>
+  <li>
+    <button
+      key="1"
+      onClick={[Function]}
+    >
+      Section 2
+    </button>
+    <p>
+      <p
+        className="content"
+      >
+        Cupiditate tenetur aliquam necessitatibus id distinctio quas nihil ipsam nisi modi!
+      </p>
+    </p>
+  </li>
+  <li>
+    <button
+      key="2"
+      onClick={[Function]}
+    >
+      Section 3
+    </button>
+    <p />
+  </li>
+</ul>
+`;
+
+exports[`Tabs Component opens 3rd  tab and closes any other tab 1`] = `
+<ul>
+  <li>
+    <button
+      key="0"
+      onClick={[Function]}
+    >
+      Section 1
+    </button>
+    <p />
+  </li>
+  <li>
+    <button
+      key="1"
+      onClick={[Function]}
+    >
+      Section 2
+    </button>
+    <p />
+  </li>
+  <li>
+    <button
+      key="2"
+      onClick={[Function]}
+    >
+      Section 3
+    </button>
+    <p>
+      <p
+        className="content"
+      >
+        Animi amet cumque sint cupiditate officia ab voluptatibus libero optio et?
+      </p>
+    </p>
+  </li>
+</ul>
+`;
+
+exports[`Tabs Component renders empty given no tabs 1`] = `<ul />`;
+
+exports[`Tabs Component renders the buttons and no tabs by default 1`] = `
+<ul>
+  <li>
+    <button
+      key="0"
+      onClick={[Function]}
+    >
+      Section 1
+    </button>
+    <p />
+  </li>
+  <li>
+    <button
+      key="1"
+      onClick={[Function]}
+    >
+      Section 2
+    </button>
+    <p />
+  </li>
+  <li>
+    <button
+      key="2"
+      onClick={[Function]}
+    >
+      Section 3
+    </button>
+    <p />
+  </li>
+</ul>
+`;
+
+exports[`renders empty given no tabs 1`] = `<ul />`;
